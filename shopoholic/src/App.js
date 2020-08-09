@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import classes from './App.css';
 import {BrowserRouter,Switch,Link,Route} from 'react-router-dom';
-
+import Home from './Component/Home/Home';
+import Header from './Component/Header/Header';
 class App extends Component {
   
   render() {
     return (
-      <BrowserRouter>
+    <BrowserRouter>
       <div className={classes.App}>
-       <Switch>
-         <Route path="/checkout"><h1>checkout page!!</h1></Route>
-         <Route path="/login"><h1>login page!!</h1></Route>
-         <Route path="/"><h1>home Page!!</h1></Route>
-       </Switch>
+        <Switch>
+          <Route path="/checkout">
+            <Header/>
+            <h1>checkout page!!</h1>
+            </Route>
+          <Route path="/login"><h1>login page!!</h1></Route>
+          <Route path="/">
+            <Header/>
+            <Home/>
+          </Route>
+        </Switch>
       </div>
-      </BrowserRouter> 
+    </BrowserRouter> 
       
     );
     

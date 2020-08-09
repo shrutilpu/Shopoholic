@@ -1,0 +1,53 @@
+.Header{
+background-color: #2b3a4d;
+display: flex;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 100;
+width: 100%;
+}
+.Logo{
+ width: 100px;
+ margin-right: 20px;
+ margin-left: 10px;
+ object-fit: contain;
+}
+.SearchInput{
+display: flex;
+flex: 1;
+height: 10px;
+padding: 5px;
+}
+.SearchIcon{
+ background-color: #cd9042;
+}
+.HeaderNav{
+ display: flex;
+ justify-content: space-evenly;
+}
+.HeaderLink{
+ color: #fff;
+ text-decoration: none;
+}
+.HeaderOption{
+ display: flex;
+ flex-direction: column;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+.HeaderOption1{
+font-size: 10px;
+}
+.HeaderOption2{
+font-size:13px ;
+font-weight: 100;
+}
+.Cart{
+ display: flex;
+ align-items: center;
+}
+.BasketCount{
+margin-left: 5px;
+margin-right: 5px;
+}
