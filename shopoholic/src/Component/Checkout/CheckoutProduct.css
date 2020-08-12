@@ -1,0 +1,22 @@
+.CheckoutProduct{
+ display: flex;
+ margin-left: 10px;
+}
+.img{
+ object-fit: contain;
+ width:180px;
+ height: 180px;
+}
+.ProductInfo{
+ padding-left: 10px;
+}
+.Rating{
+ display: flex;
+}
+.Remove{
+ background-color: burlywood;
+ border: 1px solid;
+ margin-top: 10px;
+ border-color: #a88734 #9c7e31 #846a29;
+ color: #000;
+}

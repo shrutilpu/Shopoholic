@@ -3,6 +3,7 @@ import classes from './App.css';
 import {BrowserRouter,Switch,Link,Route} from 'react-router-dom';
 import Home from './Component/Home/Home';
 import Header from './Component/Header/Header';
+import Checkout from './Component/Checkout/Checkout';
 class App extends Component {
   
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
         <Switch>
           <Route path="/checkout">
             <Header/>
-            <h1>checkout page!!</h1>
+            <Checkout/>
             </Route>
           <Route path="/login"><h1>login page!!</h1></Route>
           <Route path="/">

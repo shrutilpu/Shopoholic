@@ -1,5 +1,12 @@
+import product from './Images/laura-chouette-f-fYv8Tnaro-unsplash.jpg'
 export const initialState={
- basket:[]
+ basket:[{
+    title:"dress sgdh sgsadg ajdgj DGGDH sjDDDG ",
+    id : "3f3562",
+    image:product,
+    price:"500",
+    rating:5
+ }]
 }
 
 const reducer = (state,action)=>{
