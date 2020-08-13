@@ -1,8 +1,14 @@
 import React from 'react';
 import classes from './CheckoutProduct.css';
+import {useStateValue} from '../StateProvider/StateProvider';
 const checkoutProduct=(props)=>{
+  const [{basket},dispatch]= useStateValue();
  const onRemoveHandler=()=>{
-  
+   //console.log(props.id);
+  dispatch({
+    type:"REMOVE_FROM_BASKET",
+    id:props.id
+  });
  }
  return (
  <div className={classes.CheckoutProduct}>
@@ -16,7 +22,7 @@ const checkoutProduct=(props)=>{
        <div className={classes.Rating}>
         {
          Array(props.rating).fill().map(_ =>{
-          return <span>⭐</span>
+          return <span role="img" aria-labelledby="star">⭐</span>
          })
         }
        </div>

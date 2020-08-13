@@ -15,7 +15,9 @@ class App extends Component {
             <Header/>
             <Checkout/>
             </Route>
-          <Route path="/login"><h1>login page!!</h1></Route>
+          <Route path="/login">
+            
+          </Route>
           <Route path="/">
             <Header/>
             <Home/>

@@ -13,46 +13,46 @@ const home = (props)=>{
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "
       id = "1"
       img={Banner}
-      price="50"
+      price={50}
       rating={4}
      />
      <Product
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "
-      id = "1"
+      id = "2"
       img={Banner}
-      price="50"
+      price={50}
       rating={4}
      />
      </div>
      <div className={classes.Product}>
      <Product
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "
-      id = "1"
+      id = "3"
       img={Banner}
-      price="50"
+      price={80}
       rating={4}
      />
      <Product
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "
-      id = "1"
+      id = "4"
       img={Banner}
-      price="50"
+      price={50}
       rating={4}
      />
       <Product
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "
-      id = "1"
+      id = "5"
       img={Banner}
-      price="50"
+      price={50}
       rating={4}
      />
      </div>
      <div className={classes.Product}>
      <Product
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "
-      id = "1"
+      id = "6"
       img={Banner}
-      price="50"
+      price={50}
       rating={4}
      /></div>
   </div>

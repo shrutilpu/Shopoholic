@@ -9,7 +9,7 @@ import logo from '../../Images/Free_Sample_By_Wix.jpeg';
 
 const header = (props)=>{
    const [{basket}]=useStateValue();
-   console.log(basket);
+   //console.log(basket);
  return (<div  className={classes.Header}>
      
     <Link to="/"><img src={logo} alt ="logo" className={classes.Logo}/></Link>
