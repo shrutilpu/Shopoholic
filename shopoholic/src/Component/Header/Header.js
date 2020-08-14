@@ -6,10 +6,22 @@ import BasketIcon from '@material-ui/icons/ShoppingBasket';
 
 import {useStateValue} from '../StateProvider/StateProvider';
 import logo from '../../Images/Free_Sample_By_Wix.jpeg';
+import { auth } from '../../Firbase';
 
 const header = (props)=>{
-   const [{basket}]=useStateValue();
+   const [{basket,user}]=useStateValue();
    //console.log(basket);
+
+   const login=()=>{
+    
+    if(user){
+        let r=window.confirm("are you sure wanna log out?");
+    if(r)
+   {
+        auth.signOut()
+    }
+}
+   }
  return (<div  className={classes.Header}>
      
     <Link to="/"><img src={logo} alt ="logo" className={classes.Logo}/></Link>
@@ -21,10 +33,10 @@ const header = (props)=>{
 <div className={classes.HeaderNav}>
 
        
-    <Link className={classes.HeaderLink} to="/login">
-        <div className={classes.HeaderOption}>
-          <span className={classes.HeaderOption1}>Hello!</span>
-          <span className={classes.HeaderOption2}>signUp!</span>
+    <Link className={classes.HeaderLink} to={!user && "/login"}>
+        <div className={classes.HeaderOption} onClick={login}>
+ <span className={classes.HeaderOption1}>Hello!{"  "}{user?user.email:null}</span>
+ <span className={classes.HeaderOption2}>{user?"sign-out":"sign-IN"}</span>
         </div>
     </Link>
 
