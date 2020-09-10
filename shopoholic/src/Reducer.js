@@ -1,15 +1,8 @@
-import product from './Images/laura-chouette-f-fYv8Tnaro-unsplash.jpg'
 
 export const getBasketTotal = (basket)=> basket.reduce((amount,item)=>amount+item.price,0)
 
 export const initialState={
- basket:[{
-    title:"dress sgdh sgsadg ajdgj DGGDH sjDDDG ",
-    id : "3f3562",
-    image:product,
-    price:500,
-    rating:5
- }],
+ basket:[],
  user:null
 }
 

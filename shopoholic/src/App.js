@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import classes from './App.css';
-import {BrowserRouter,Switch,Link,Route} from 'react-router-dom';
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Home from './Component/Home/Home';
 import Header from './Component/Header/Header';
 import Checkout from './Component/Checkout/Checkout';
 import Login from './Component/Login/Login';
 import { useStateValue } from './Component/StateProvider/StateProvider';
 import {auth} from './Firbase';
+import axios from 'axios';
 const App =()=> {
 
     const [{user},dispatch]= useStateValue();
@@ -32,6 +33,9 @@ const App =()=> {
   return()=>{
     unsubscribed();
   };
+  },[]);
+  useEffect(()=>{
+  
   },[]);
 console.log(user);
     return (

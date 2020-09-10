@@ -3,7 +3,6 @@ import classes from './Checkout.css';
  
 import SubTotal from './Subtotal';
 import CheckoutProduct from './CheckoutProduct';
-import Add from '../../Images/laura-chouette-fPL339HWo68-unsplash.jpg';
 import { useStateValue } from '../StateProvider/StateProvider';
 const checkout =()=>{
  const [{basket}] = useStateValue();
@@ -11,7 +10,7 @@ const checkout =()=>{
   <div className={classes.Checkout}>
         <div className={classes.CheckoutLeft}> 
           <img className={classes.Add}
-          src={Add} alt="product"></img>
+          src="https://firebasestorage.googleapis.com/v0/b/shopoholic-a43c0.appspot.com/o/ProductImages%2Fchanne.jpg?alt=media&token=ffe7bd0d-9486-43bd-bd40-c9a955011cc3" alt="product"></img>
 
          {basket.length===0?(
             <div>

@@ -5,7 +5,6 @@ import SearchIcon from '@material-ui/icons/Search';
 import BasketIcon from '@material-ui/icons/ShoppingBasket';
 
 import {useStateValue} from '../StateProvider/StateProvider';
-import logo from '../../Images/Free_Sample_By_Wix.jpeg';
 import { auth } from '../../Firbase';
 
 const header = (props)=>{
@@ -24,7 +23,7 @@ const header = (props)=>{
    }
  return (<div  className={classes.Header}>
      
-    <Link to="/"><img src={logo} alt ="logo" className={classes.Logo}/></Link>
+    <Link to="/"><img src="https://firebasestorage.googleapis.com/v0/b/shopoholic-a43c0.appspot.com/o/ProductImages%2Ff860aeef-8d9b-4911-8762-b121186039b4_200x200.png?alt=media&token=4aa21cc3-f253-4367-8800-d4662b0c932d" alt ="logo" className={classes.Logo}/></Link>
 
     <input type="text" className={classes.SearchInput}></input>
     <SearchIcon className={classes.SearchIcon}/>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classes from './Login.css'
 import {Link,useHistory} from 'react-router-dom';
-import logo from '../../Images/Free_Sample_By_Wix.jpeg';
+import logo from '../../Images/logo.jpeg';
 import {auth} from '../../Firbase';
 
 const login =()=>{
