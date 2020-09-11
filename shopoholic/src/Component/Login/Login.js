@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Login.css'
 import {Link,useHistory} from 'react-router-dom';
-import logo from '../../Images/logo.jpeg';
 import {auth} from '../../Firbase';
 
 const login =()=>{
@@ -25,7 +24,8 @@ const [password,setPassword]=useState('');
  return (
   <div className={classes.Login}>
    <Link to="/">
-     <img src={logo} alt="logo" className={classes.logo}></img>
+     <img src="https://firebasestorage.googleapis.com/v0/b/shopoholic-a43c0.appspot.com/o/ProductImages%2Ff860aeef-8d9b-4911-8762-b121186039b4_200x200.png?alt=media&token=4aa21cc3-f253-4367-8800-d4662b0c932d"
+      alt="logo" className={classes.logo}></img>
    </Link>
 
    <div className={classes.Container}>
