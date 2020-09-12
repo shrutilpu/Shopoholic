@@ -18,7 +18,7 @@ const [password,setPassword]=useState('');
  const register=(event)=>{
   event.preventDefault();
   auth.createUserWithEmailAndPassword(email,password).then(auth=>{
-
+   alert("Account created succesfully,log IN and enjoy");
   }).catch(e=>alert(e.message));
  }
  return (
