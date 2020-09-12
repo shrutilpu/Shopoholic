@@ -1,0 +1,9 @@
+.Categories{
+ display: flex;
+ overflow-x: scroll;
+ scroll-behavior: smooth;
+ align-items: center;
+}
+.Categories::-webkit-scrollbar{
+ display: none;
+}

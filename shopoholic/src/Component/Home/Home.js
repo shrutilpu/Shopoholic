@@ -3,11 +3,13 @@ import classes from './Home.css';
 import Banner from '../../Images/offer.jpg'
 
 import Product from '../Product/Product';
+import Categories from '../Categories/Categories';
 const home = (props)=>{
  return(
   <div className={classes.Home}>
-     <img src={Banner} alt="banner?" className={classes.Banner} />
+     {/*<img src={Banner} alt="banner?" className={classes.Banner} />
   {/*product id ,title,price,rating image*/}
+       <Categories/>
      <div className={classes.Product}>
      <Product
       title="dress sgdh sgsadg ajdgj DGGDH sjDDDG "

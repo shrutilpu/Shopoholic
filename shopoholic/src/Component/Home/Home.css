@@ -4,6 +4,8 @@
  margin-right: auto;
  margin-top: auto;
  background-color: gray;
+ align-items: center;
+ align-content: center;
 }
 .Banner{
  width: 100%;
@@ -18,4 +20,10 @@
  z-index: 1;
  padding: 10px;
  background-color: gray;
+}
+@media(max-width:500px){
+ .Product{
+ flex-direction: column;
+ width: 250px;
+ }
 }
