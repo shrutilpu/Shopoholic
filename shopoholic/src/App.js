@@ -7,7 +7,7 @@ import Checkout from './Component/Checkout/Checkout';
 import Login from './Component/Login/Login';
 import { useStateValue } from './Component/StateProvider/StateProvider';
 import {auth} from './Firbase';
-import axios from 'axios';
+import OrderSummary from './Component/Order/OrderSummary';
 const App =()=> {
 
     const [{user},dispatch]= useStateValue();
@@ -49,6 +49,10 @@ console.log(user);
           <Route path="/login">
             <Login/>
           </Route>
+          <Route path="/OrderSummary">
+            <Header/>
+            <OrderSummary/>
+            </Route>
           <Route path="/">
             <Header/>
             <Home/>

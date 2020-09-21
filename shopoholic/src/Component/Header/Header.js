@@ -29,9 +29,7 @@ const header = (props)=>{
     <SearchIcon className={classes.SearchIcon}/>
      
 
-<div className={classes.HeaderNav}>
-
-       
+<div className={classes.HeaderNav}>   
     <Link className={classes.HeaderLink} to={!user && "/login"}>
         <div className={classes.HeaderOption} onClick={login}>
  <span className={classes.HeaderOption1}>Hello!{"  "}{user?user.email:null}</span>
