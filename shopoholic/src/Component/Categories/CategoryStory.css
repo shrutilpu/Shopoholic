@@ -1,8 +1,20 @@
 .CategoryStory{
- padding: 10px;
+    margin: 4.5px;
+    align-items: center;
+    text-align: center;
+}
+.CategoryStoryImg{
  border: 2px solid #440536;
  border-radius: 50%;
+ width: 70px;
+ height: 70px;
  background-color: lightslategray;
  display: flex;
  margin: 5px;
+}
+.CategoryStoryImg > img{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
