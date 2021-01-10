@@ -3,9 +3,12 @@ import classes from './CategoryStory.css';
 
 function CategoryStory({title,Img}) {
  return (
-  <div className={classes.CategoryStory} style={{backgroundImage:Img}}>
-   <p>{title}</p>
+
+  <div className={classes.CategoryStory}>
+      <div className={classes.CategoryStoryImg}><img src={Img} alt="shoe"/></div>
+      <strong>{title}</strong>
   </div>
+   
  )
 }
 
