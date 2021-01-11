@@ -49,7 +49,7 @@ const header = (props)=>{
     <Link className={classes.HeaderLink} to="/">
         <div className={classes.HeaderOption}>
             <span className={classes.HeaderOption1}>Your</span>
-            <span className={classes.HeaderOption2}>prime</span>
+            <span className={classes.HeaderOption2}>points</span>
         </div>
     </Link>
 
