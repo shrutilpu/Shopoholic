@@ -8,9 +8,12 @@ import Login from './Component/Login/Login';
 import { useStateValue } from './Component/StateProvider/StateProvider';
 import {auth} from './Firbase';
 import OrderSummary from './Component/Order/OrderSummary';
+import Masonary from './Component/Masnary/Masonary';
+
 const App =()=> {
 
     const [{user},dispatch]= useStateValue();
+
   //useeffect
   useEffect(()=>{
  const unsubscribed = auth.onAuthStateChanged((authuser)=>{
@@ -34,10 +37,8 @@ const App =()=> {
     unsubscribed();
   };
   },[]);
-  useEffect(()=>{
   
-  },[]);
-console.log(user);
+//console.log(user);
     return (
     <BrowserRouter>
       <div className={classes.App}>
@@ -52,6 +53,10 @@ console.log(user);
           <Route path="/OrderSummary">
             <Header/>
             <OrderSummary/>
+            </Route>
+            <Route path="/masonary">
+            <Header/>
+            <Masonary/>
             </Route>
           <Route path="/">
             <Header/>

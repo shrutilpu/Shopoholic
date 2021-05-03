@@ -1,0 +1,22 @@
+.Container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  background-color: #52096e;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 1300px;
+  grid-auto-flow: dense;
+}
+
+.Container :nth-child(5n) {
+  grid-column: span 2;
+}
+
+.Container :nth-child(3n) {
+  grid-row: span 2;
+}
+/*# sourceMappingURL=Masonary.css.map */

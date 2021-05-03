@@ -4,6 +4,8 @@ import Banner from '../../Images/offer.jpg'
 
 import Product from '../Product/Product';
 import Categories from '../Categories/Categories';
+import Footer from  '../Footer/Footer';
+
 const home = (props)=>{
  return(
   <div className={classes.Home}>
@@ -57,6 +59,7 @@ const home = (props)=>{
       price={50}
       rating={4}
      /></div>
+     <Footer/>
   </div>
  );
 }

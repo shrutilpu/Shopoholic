@@ -1,0 +1,25 @@
+$background : #52096e;
+
+.Container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    background-color: $background;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 1300px;
+    grid-auto-flow: dense;
+    
+    :nth-child(5n){
+        grid-column: span 2;
+    }
+    :nth-child(3n){
+        grid-row: span 2;
+    }
+    
+    
+    
+}
+

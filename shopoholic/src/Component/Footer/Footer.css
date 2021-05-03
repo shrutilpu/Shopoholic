@@ -1,0 +1,22 @@
+.Footer{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.Content{
+    width: 250px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2rem;
+}
+@media(max-width:600px){
+    .Footer
+    {
+        display: none;
+    }
+}
